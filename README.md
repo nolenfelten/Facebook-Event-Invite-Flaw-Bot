@@ -13,43 +13,43 @@ Using Python and Firefox, along with the <a href="https://pypi.python.org/pypi/s
 
 
 We want to use the browser webdriver, and we want to be able to send input to the text fields.
-    from selenium import webdriver
-    from selenium.webdriver.common.keys import Keys
-    import os
+        from selenium import webdriver
+        from selenium.webdriver.common.keys import Keys
+        import os
 
 
 
 Open Facebook
-    print "\nOpening Facebook"
-    browser.get('http://m.facebook.com')
-    print "Facebook Opened"
+        print "\nOpening Facebook"
+        browser.get('http://m.facebook.com')
+        print "Facebook Opened"
 
 
 Email variable
-    print "\nSelecting Email Box"
-    login = browser.find_element_by_id("email")
+        print "\nSelecting Email Box"
+        login = browser.find_element_by_id("email")
 
 Enter Email
-    print "Entering email"
-    login.send_keys("")
+        print "Entering email"
+        login.send_keys("")
 
 Password variable
-    print "\nSelecting Password box"
-    login = browser.find_element_by_id("pass")
+        print "\nSelecting Password box"
+        login = browser.find_element_by_id("pass")
 
 Enter Password
-    print "Entering Password"
-    login.send_keys("")
+        print "Entering Password"
+        login.send_keys("")
     
 Login
-    print "Logging in"
-    login.send_keys(Keys.RETURN)
+        print "Logging in"
+        login.send_keys(Keys.RETURN)
 
 
 
 Ask for event page
-    response = raw_input("Enter event page URL: ")
+        response = raw_input("Enter event page URL: ")
 
 Go to the event page
-    print "Going to event URL"
-    browser.get(response)
+        print "Going to event URL"
+        browser.get(response)
